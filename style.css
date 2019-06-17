@@ -1,0 +1,12 @@
+body{   
+    text-align:center;
+    padding:0px;
+}
+#background-container{
+}
+#header-container{
+    background:linear-gradient(90deg,#E78B0E,#FBE1BE);
+    padding:10px 0px 0px 0px;
+    margin:0px;
+    border-radius:5px;
+}
