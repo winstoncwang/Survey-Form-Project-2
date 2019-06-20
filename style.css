@@ -1,12 +1,66 @@
 body{   
     text-align:center;
     padding:0px;
+    margin:0px;
 }
 #background-container{
+        background:linear-gradient(180deg,#E78B0E,#FBE1BE);
+    padding:40px 0px 40px;
+    margin:0px;
+    height:91vh;
+    
+    display:flex;
+    flex-direction:column;
+    justify-content: center;
+    
 }
 #header-container{
-    background:linear-gradient(90deg,#E78B0E,#FBE1BE);
-    padding:10px 0px 0px 0px;
-    margin:0px;
-    border-radius:5px;
+  background:white;
+  margin:auto;
+  border-radius:8px;
+  width:600px;
+    
 }
+#header-container p{
+    padding:0px;
+    margin:15px;
+    font-weight:600;
+}
+#title{
+    padding:0px;
+    margin:30px;
+}
+#survey-form{
+    padding:30px 0px;
+}
+input[type="text"]{
+    border-left-color: transparent;
+    border-top-color: transparent;
+    border-right-color: transparent;
+    border-bottom-color: #FBE1BE;
+}
+input[type="text"]:focus{
+    outline-style: none;
+    border-bottom-color:#E78B0E;
+    border-bottom-width:medium;
+}
+.sf-improvement-container{
+    display:grid;
+    grid-template-columns:1fr;
+    justify-items:left;
+}
+#professional-label{
+    grid-column:1/2;
+    margin:15px auto;
+    padding:0px;
+}
+#comments-container{
+    margin:10px 40px 40px;
+    
+}
+.sf-label{
+    margin:0px 230px 0px;
+    
+}
+
+
