@@ -2,12 +2,12 @@ body{
     text-align:center;
     padding:0px;
     margin:0px;
+    font-family: sans-serif;
 }
 #background-container{
-        background:linear-gradient(180deg,#E78B0E,#FBE1BE);
+    background:linear-gradient(180deg,#E78B0E,#FBE1BE);
     padding:40px 0px 40px;
     margin:0px;
-    height:91vh;
     
     display:flex;
     flex-direction:column;
@@ -31,7 +31,7 @@ body{
     margin:30px;
 }
 #survey-form{
-    padding:30px 0px;
+    padding:0px 0px 0px;
 }
 input[type="text"]{
     border-left-color: transparent;
@@ -44,36 +44,51 @@ input[type="text"]:focus{
     border-bottom-color:#E78B0E;
     border-bottom-width:medium;
 }
+.left-tab{
+    display:inline-block;
+    
+    text-align:right;
+    
+}
+.right-tab{
+    display: inline-block;
+    width:0%;
+    
+}
+
 .sf-improvement-container{
     display:grid;
     grid-template-columns:1fr 1fr;
-    grid-template-rows:repeat(auto-fill,30px);
+    grid-template-rows:30px repeat(auto-fill,30px);
     justify-items:left;
     padding:0px 20px;
-    margin:30px 0px;
+    margin:30px 0px 30px;
 }
 #professional-label{
     grid-column:1/2;
     margin:0px;
     padding:0px;
 }
-.info-label{
-    margin:0px;
-    padding:0px;
-}
 #comments-container{
-    margin:10px 40px 40px;
+    margin:10px 0px 40px;
+    padding:0px 30px;
     
 }
 .sf-label{
     grid-column:2/3;
-    margin:0px 0px auto;
     display:flex;
     flex-direction:row;
     align-items: center;
-    padding:10px;
-    margin:0px;
+    padding:5px;
     
+}
+textarea{
+    display:inline-block;
+    resize: none;
+    height:90px;
+    width:100%;
+    margin:0px px auto;
+    padding:0px;
 }
 
 

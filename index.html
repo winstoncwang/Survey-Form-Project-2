@@ -17,18 +17,21 @@
      <form id="survey-form">
             
             <div class="sf-forename">
-                <label class="info-label">Please fill in your details using the space provided:</label>
-                <br>
-                 <label id="name-label" for="name">*Forename:</label>   
+                <div class="left-tab">
+                 <label class="info-label" id="name-label" for="name">*Forename:</label>
+                </div>
+                <div class="right-tab">
                  <input autofocus id="name" type="text" name="name" placeholder="Enter your forename here" required>
+                </div>
             </div>
             <div class="sf-surname">
-                 <label id="surname-label" for="name2">*Surname:</label>
+                 <label class="info-label" id="surname-label" for="name2">*Surname:</label>
                  <input id="name2" type="text" name="name2" placeholder="Enter your surname here" required>
             </div>
             <div class="sf-gender">
                 <label>*Gender:</label>
-                <select id="gender-dropdown">
+                <select id="dropdown">
+                   <option disabled selected value>Select your gender</option>
                    <option value="male">Male</option>
                    <option value="female">Female</option>
                    <option value="trans">Transgender</option>
@@ -50,7 +53,7 @@
             </div>
             
             <div class="sf-improvement-container">
-                <label class="info-label" id="professional-label">*Please select the section of the website which needs be to improved upon:</label>
+                <label id="professional-label">*Please select the section of the website which needs be to improved upon:</label>
                 
                 <label class="sf-label" id="p1-label" for="p1"><input type="checkbox" id="p1" name="radios" value="index-page"> 
                 Index Page</label>
@@ -72,14 +75,15 @@
                 
                 <label class="sf-label" id="p7-label" for="p7"><input type="checkbox" id="p7" name="radio" value="page-structure">
                 Page Structure</label>
-                <br>
                 </div>
          
                 <div id="comments-container">
-                <label class="info-label" id="info-label" for="comment-box">Please use the area below for any feedback relating to the website:</label>
-                <input type="text" id="comment-box" name=comment-box placeholder="Please type your comments here...">
+                <label id="info-label" for="comment-box">Please use the area below for any feedback relating to the website:</label>
+                    <br>
+                    <br>
+                    <textarea id="comment-box" name=comment-box placeholder="Please type your comments here..."></textarea>
                 <br>
-                <input type="button" id=submit-button name="submit" value="submit">
+                <input type="button" id=submit-button name="submit" value="Submit">
                 </div>
             
         </form>
