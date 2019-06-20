@@ -5,15 +5,17 @@
 <link rel="stylesheet" type="text/css" href="style.css">
 <meta charset="utf-8">
 <title>Survey Form</title>
-    </head>
+</head>
+
 <body>
   <div id="background-container">    
     <div id="header-container">
-     <h1 id="title">Portfolio Feedback Form</h1>
+     <h1 id="title">Portfolio Page Feedback Form</h1>
      <p id="description">Please complete all the box necessary to help me improve my current portfolio page.</p>
+        <!---------------------- FORM ----------------------->
         <form id="survey-form">
             <div class="sf-forename">
-             <label id="firstname-label" for="name">*Forename:</label>    
+             <label id="name-label" for="name">*Forename:</label>    
              <input autofocus id="name" type="text" name="name" placeholder="Enter your forename here" required>
             </div>
             <div class="sf-surname">
@@ -26,12 +28,27 @@
             </div>
             
             <div class="sf-profession">
-             <label id="professional-label">Please select the professional listed below:</label>
-             <input type="radio" id="p1" name="radios" value=""
+                <label id="professional-label">*Please select the section of the website which needs to improved:</label>
+                <br>
+                <input type="radio" id="p1" name="radios" value="index-page" checked="on"> 
+                <label id="p1-label" for="p1">Index Page</label>
+                <br>
+                <input type="radio" id="p2" name="radios" value="about-page">
+                <label id="p2-label" for="p2">About Page</label>
+                <br>
+                <input type="radio" id="p3" name="radios" value="portfolio-page">
+                <label id="p3-label" for="p3">Portfolio Page</label>
+                <br>
+                <input type="radio" id="p4" name="radio" value="contact-page">
+                <label id="p4-label" for="p4">Contact Page</label>
+                <br>
+                <input type="radio" id="p5" name="radio" value="overall-design">
+                <label id="p5-label" for="p5">Overall Design</label>
+                <br>
             </div>
                 
             <div class="sf-experience">
-             <label id="experience-label" for="experience">*Years of professional experience:</label>
+             <label id="number-label" for="experience">*Years of professional experience:</label>
              <input id="experience" type="number" name="experience-year" placeholder="Enter your years of experience here" min="0" max="100">
             </div>
         
