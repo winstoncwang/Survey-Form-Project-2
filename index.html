@@ -1,5 +1,7 @@
 <!DOCTYPE html>
 <html>
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js">
+</script>
 <head>
     
 <link rel="stylesheet" type="text/css" href="style.css">
@@ -18,7 +20,7 @@
             
             <div class="sf-forename">
                 <div class="left-tab">
-                 <label class="info-label" id="name-label" for="name">*Forename:</label>
+                 <label id="name-label" for="name">*Forename:</label>
                 </div>
                 <div class="right-tab">
                  <input autofocus id="name" type="text" name="name" placeholder="Enter your forename here" required>
@@ -26,7 +28,7 @@
             </div>
             <div class="sf-surname">
                 <div class="left-tab">
-                 <label class="info-label" id="surname-label" for="name2">*Surname:</label>
+                 <label id="surname-label" for="name2">*Surname:</label>
                 </div>
                 <div class="right-tab">
                  <input id="name2" type="text" name="name2" placeholder="Enter your surname here" required>
@@ -65,15 +67,162 @@
             </div>
             <div class="sf-experience-year">
                <div class="left-tab">
-                 <label id="number-label" for="experience">*Years of professional experience:</label>
+                 <label id="number-label" for="number">*Years of professional experience:</label>
                </div>
                <div class="right-tab">
-                 <input id="experience" type="number" name="experience-year" placeholder="Years of experience" min="0" max="100">
+                 <input id="number" type="number" name="experience-year" placeholder="Years of experience" min="0" max="100">
                </div>
             </div>
-            <div id="radio-container">
-              
          
+            <div id="section-container">
+              <label class="info-label">Please rate each section accordingly: </label>
+              <br>
+              <div>
+                  <div class="left-mid-tab">
+                    <label>Design Structure</label>
+                  </div>
+                  <div class="right-tab">
+                    <div class="radio-grid">
+                      <label class="label1" for="radio1">1</label>
+                      <input class="radio1" type="radio" id="radio1" name="radio1" value="designstructure1">
+
+                      <label class="label2" for="radio2">2</label>
+                      <input class="radio2" type="radio" id="radio2" name="radio1" value="designstructure2">  
+
+                      <label class="label3" for="radio3">3</label>
+                      <input class="radio3" type="radio" id="radio3" name="radio1" value="designstructure3">
+
+                      <label class="label4" for="radio4">4</label>
+                      <input class="radio4" type="radio" id="radio4" name="radio1" value="designstructure4">
+
+                      <label class="label5" for="radio5">5</label>
+                      <input class="radio5" type="radio" id="radio5" name="radio1" value="designstructure5">
+                    </div>
+                  </div>
+                </div>
+                 
+                <div>      
+                  <div class="left-mid-tab">
+                    <label>Choice of Colour</label>
+                  </div>
+                  <div class="right-tab">
+                    <div class="radio-grid">
+                      <label class="label1" for="radio1">1</label>
+                      <input class="radio1" type="radio" id="radio1" name="radio2" value="colourchoice1">
+
+                      <label class="label2" for="radio2">2</label>
+                      <input class="radio2" type="radio" id="radio2" name="radio2" value="colourchoice2">  
+
+                      <label class="label3" for="radio3">3</label>
+                      <input class="radio3" type="radio" id="radio3" name="radio2" value="colourchoice3">
+
+                      <label class="label4" for="radio4">4</label>
+                      <input class="radio4" type="radio" id="radio4" name="radio2" value="colourchoice4">
+
+                      <label class="label5" for="radio5">5</label>
+                      <input class="radio5" type="radio" id="radio5" name="radio2" value="colourchoice5">
+                    </div>
+                  </div>
+                </div>
+                
+                <div>      
+                  <div class="left-mid-tab">
+                    <label>Contents</label>
+                  </div>
+                  <div class="right-tab">
+                    <div class="radio-grid">
+                      <label class="label1" for="radio1">1</label>
+                      <input class="radio1" type="radio" id="radio1" name="radio3" value="contents1">
+
+                      <label class="label2" for="radio2">2</label>
+                      <input class="radio2" type="radio" id="radio2" name="radio3" value="contents2">  
+
+                      <label class="label3" for="radio3">3</label>
+                      <input class="radio3" type="radio" id="radio3" name="radio3" value="contents3">
+
+                      <label class="label4" for="radio4">4</label>
+                      <input class="radio4" type="radio" id="radio4" name="radio3" value="contents4">
+
+                      <label class="label5" for="radio5">5</label>
+                      <input class="radio5" type="radio" id="radio5" name="radio3" value="contents5">
+                    </div>
+                  </div>
+                </div>
+                
+                <div>      
+                  <div class="left-mid-tab">
+                    <label>Dynamic Features</label>
+                  </div>
+                  <div class="right-tab">
+                    <div class="radio-grid">
+                      <label class="label1" for="radio1">1</label>
+                      <input class="radio1" type="radio" id="radio1" name="radio4" value="dynamicfeature1">
+
+                      <label class="label2" for="radio2">2</label>
+                      <input class="radio2" type="radio" id="radio2" name="radio4" value="dynamicfeature2">  
+
+                      <label class="label3" for="radio3">3</label>
+                      <input class="radio3" type="radio" id="radio3" name="radio4" value="dynamicfeature3">
+
+                      <label class="label4" for="radio4">4</label>
+                      <input class="radio4" type="radio" id="radio4" name="radio4" value="dynamicfeature4">
+
+                      <label class="label5" for="radio5">5</label>
+                      <input class="radio5" type="radio" id="radio5" name="radio4" value="dynamicfeature5">
+                    </div>
+                  </div>
+                </div>
+                
+                <div>      
+                  <div class="left-mid-tab">
+                    <label>Navigation</label>
+                  </div>
+                  <div class="right-tab">
+                    <div class="radio-grid">
+                      <label class="label1" for="radio1">1</label>
+                      <input class="radio1" type="radio" id="radio1" name="radio5" value="navigation1">
+
+                      <label class="label2" for="radio2">2</label>
+                      <input class="radio2" type="radio" id="radio2" name="radio5" value="navigation2">  
+
+                      <label class="label3" for="radio3">3</label>
+                      <input class="radio3" type="radio" id="radio3" name="radio5" value="navigation3">
+
+                      <label class="label4" for="radio4">4</label>
+                      <input class="radio4" type="radio" id="radio4" name="radio5" value="navigation4">
+
+                      <label class="label5" for="radio5">5</label>
+                      <input class="radio5" type="radio" id="radio5" name="radio5" value="navigation5">
+                    </div>
+                  </div>
+                </div>
+                
+                <div>      
+                  <div class="left-mid-tab">
+                    <label>Recommendation to others</label>
+                  </div>
+                  <div class="right-tab">
+                    <div class="radio-grid">
+                      <label class="label1" for="radio1">1</label>
+                      <input class="radio1" type="radio" id="radio1" name="radio6" value="recommend1">
+
+                      <label class="label2" for="radio2">2</label>
+                      <input class="radio2" type="radio" id="radio2" name="radio6" value="recommend2">  
+
+                      <label class="label3" for="radio3">3</label>
+                      <input class="radio3" type="radio" id="radio3" name="radio6" value="recommend3">
+
+                      <label class="label4" for="radio4">4</label>
+                      <input class="radio4" type="radio" id="radio4" name="radio6" value="recommend4">
+
+                      <label class="label5" for="radio5">5</label>
+                      <input class="radio5" type="radio" id="radio5" name="radio6" value="recommend5">
+                    </div>
+                  </div>
+                </div>
+                
+                
+                
             </div>
             
             <div class="sf-improvement-container">
@@ -107,7 +256,7 @@
                     <br>
                     <textarea id="comment-box" name=comment-box placeholder="    Please type your comments here..."></textarea>
                 <br>
-                <input type="button" id=submit-button name="submit" value="Submit">
+                <input type="submit" id="submit" name="submit" value="Submit">
                 </div>
             
         </form>

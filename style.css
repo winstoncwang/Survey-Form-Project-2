@@ -54,8 +54,7 @@ input[type="text"]:focus{
     padding:0px;
     width:43%;
     text-align:right;
-    
-    
+    font-size:16px; 
 }
 .right-tab{
     display: inline-block;
@@ -64,7 +63,65 @@ input[type="text"]:focus{
     width:40%;
     text-align:left;
 }
+/*----radio button grid----*/
+.radio-grid{
+    display:grid;
+    width:90%;
+    grid-template-columns:1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows:1fr 1fr;
+    justify-items:center;  
+}
+.radio1{
+    grid-column:1/2;
+    grid-row:1/2;
+}
+.label1{
+    grid-column:1/2;
+    grid-row:2/3;
+}
+.radio2{
+    grid-column:2/3;
+    grid-row:1/2;
+}
+.label2{
+    grid-column:2/3;
+    grid-row:2/3;
+}
+.radio3{
+    grid-column:3/4;
+    grid-row:1/2;
+}
+.label3{
+    grid-column:3/4;
+    grid-row:2/3;
+}
+.radio4{
+    grid-column:4/5;
+    grid-row:1/2;
+}
+.label4{
+    grid-column:4/5;
+    grid-row:2/3;
+}
+.radio5{
+    grid-column:5/6;
+    grid-row:1/2;
+}
+.label5{
+    grid-column:5/6;
+    grid-row:2/3;
+}
 
+/*-------------------------*/
+
+.left-mid-tab{
+    display:inline-block;
+    margin:10px 0px 10px;
+    padding:0px;
+    width:40%;
+    text-align:center;
+    font-size:16px; 
+}
 .sf-improvement-container{
     display:grid;
     grid-template-columns:50% 50%;
@@ -103,7 +160,7 @@ textarea{
 #dropdown{
     width:173px;
 }
-#submit-button{
+#submit{
     width:150px;
     height:30px;
     margin:20px 0px 0px;
@@ -111,18 +168,30 @@ textarea{
     background-color:transparent;
     border-radius:15px;
 }
-#submit-button:hover{
+#submit:hover{
    border-color:#E78B0E;
    background-color:#FBE1BE;
-   
+   animation: submitbutton 1s linear 0s infinite;
+}
+@keyframes submitbutton{
+    0% {background-color:#E78B0E;}
+    25%{background-color:#FBE1BE;}
+    50%{background-color:transparent;}
+    75%{background-color:#FBE1BE;}
+    100%{background-color:#E78B0E;}
+    
+    
 }
 input[type="checkbox"]{
-    height:20px;
-    width: 20px;
+    height:15px;
+    width:15px;
     margin:0px 10px 0px;
     border-style: none;
     
 }
-.sf-improvement-container input[type="checkbox"]:checked input[type="checkbox"]{
-    outline: 2px solid black;
+.info-label{
+    display:block;
+    width:51%;
+    margin:10px 0px;
+    text-align:right;
 }
