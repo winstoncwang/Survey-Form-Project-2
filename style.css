@@ -33,7 +33,11 @@ body{
 #survey-form{
     padding:0px 0px 0px;
 }
-input[type="text"]{
+input[type="number"]{
+    width:173px;
+}
+input[type="text"],input[type="email"],input[type="number"],#dropdown{
+    outline:none;
     border-left-color: transparent;
     border-top-color: transparent;
     border-right-color: transparent;
@@ -46,23 +50,28 @@ input[type="text"]:focus{
 }
 .left-tab{
     display:inline-block;
-    
+    margin:10px 0px 10px;
+    padding:0px;
+    width:43%;
     text-align:right;
+    
     
 }
 .right-tab{
     display: inline-block;
-    width:0%;
-    
+    margin:10px 0px 10px;
+    padding:0px;
+    width:40%;
+    text-align:left;
 }
 
 .sf-improvement-container{
     display:grid;
-    grid-template-columns:1fr 1fr;
+    grid-template-columns:50% 50%;
     grid-template-rows:30px repeat(auto-fill,30px);
     justify-items:left;
     padding:0px 20px;
-    margin:30px 0px 30px;
+    margin:15px 0px 30px;
 }
 #professional-label{
     grid-column:1/2;
@@ -89,6 +98,31 @@ textarea{
     width:100%;
     margin:0px px auto;
     padding:0px;
+    border-radius:5px;
 }
-
-
+#dropdown{
+    width:173px;
+}
+#submit-button{
+    width:150px;
+    height:30px;
+    margin:20px 0px 0px;
+    border-color:#FBE1BE;
+    background-color:transparent;
+    border-radius:15px;
+}
+#submit-button:hover{
+   border-color:#E78B0E;
+   background-color:#FBE1BE;
+   
+}
+input[type="checkbox"]{
+    height:20px;
+    width: 20px;
+    margin:0px 10px 0px;
+    border-style: none;
+    
+}
+.sf-improvement-container input[type="checkbox"]:checked input[type="checkbox"]{
+    outline: 2px solid black;
+}

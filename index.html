@@ -25,11 +25,18 @@
                 </div>
             </div>
             <div class="sf-surname">
+                <div class="left-tab">
                  <label class="info-label" id="surname-label" for="name2">*Surname:</label>
+                </div>
+                <div class="right-tab">
                  <input id="name2" type="text" name="name2" placeholder="Enter your surname here" required>
+                </div>
             </div>
             <div class="sf-gender">
+               <div class="left-tab">
                 <label>*Gender:</label>
+               </div>
+               <div class="right-tab">
                 <select id="dropdown">
                    <option disabled selected value>Select your gender</option>
                    <option value="male">Male</option>
@@ -38,18 +45,35 @@
                    <option value="fluid">Genderfluid</option>
                    <option value="n/a">Prefer not to say</option>  
                 </select>
+               </div>
             </div>
             <div class="sf-email">
+                <div class="left-tab">
                  <label id="email-label" for="email">*Email:</label>
+                </div>
+                <div class="right-tab">
                  <input id="email" type="email" name="email" placeholder="Enter your email here" required>
+                </div>
             </div>
-            <div>
-            <label id="profession" for="profession-box">Field of expertise:</label>
-            <input type="text" id="profession-box" name="profession" placeholder="Please type here......" height=80vh>
+            <div id="expertise">
+              <div class="left-tab">
+                <label id="profession" for="profession-box">Field of expertise:</label>
+              </div>
+              <div class="right-tab">
+                <input type="text" id="profession-box" name="profession" placeholder="Please type here......" height=80vh>
+              </div>
             </div>
             <div class="sf-experience-year">
-             <label id="number-label" for="experience">*Years of professional experience:</label>
-             <input id="experience" type="number" name="experience-year" placeholder="Years" min="0" max="100">
+               <div class="left-tab">
+                 <label id="number-label" for="experience">*Years of professional experience:</label>
+               </div>
+               <div class="right-tab">
+                 <input id="experience" type="number" name="experience-year" placeholder="Years of experience" min="0" max="100">
+               </div>
+            </div>
+            <div id="radio-container">
+              
+         
             </div>
             
             <div class="sf-improvement-container">
@@ -81,7 +105,7 @@
                 <label id="info-label" for="comment-box">Please use the area below for any feedback relating to the website:</label>
                     <br>
                     <br>
-                    <textarea id="comment-box" name=comment-box placeholder="Please type your comments here..."></textarea>
+                    <textarea id="comment-box" name=comment-box placeholder="    Please type your comments here..."></textarea>
                 <br>
                 <input type="button" id=submit-button name="submit" value="Submit">
                 </div>
