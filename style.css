@@ -160,7 +160,7 @@ textarea{
 #dropdown{
     width:173px;
 }
-#submit-button{
+#submit{
     width:150px;
     height:30px;
     margin:20px 0px 0px;
@@ -168,7 +168,7 @@ textarea{
     background-color:transparent;
     border-radius:15px;
 }
-#submit-button:hover{
+#submit:hover{
    border-color:#E78B0E;
    background-color:#FBE1BE;
    animation: submitbutton 1s linear 0s infinite;
