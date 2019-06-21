@@ -1,0 +1,128 @@
+body{   
+    text-align:center;
+    padding:0px;
+    margin:0px;
+    font-family: sans-serif;
+}
+#background-container{
+    background:linear-gradient(180deg,#E78B0E,#FBE1BE);
+    padding:40px 0px 40px;
+    margin:0px;
+    
+    display:flex;
+    flex-direction:column;
+    justify-content: center;
+    
+}
+#header-container{
+  background:white;
+  margin:auto;
+  border-radius:8px;
+  width:600px;
+    
+}
+#header-container p{
+    padding:0px;
+    margin:15px;
+    font-weight:600;
+}
+#title{
+    padding:0px;
+    margin:30px;
+}
+#survey-form{
+    padding:0px 0px 0px;
+}
+input[type="number"]{
+    width:173px;
+}
+input[type="text"],input[type="email"],input[type="number"],#dropdown{
+    outline:none;
+    border-left-color: transparent;
+    border-top-color: transparent;
+    border-right-color: transparent;
+    border-bottom-color: #FBE1BE;
+}
+input[type="text"]:focus{
+    outline-style: none;
+    border-bottom-color:#E78B0E;
+    border-bottom-width:medium;
+}
+.left-tab{
+    display:inline-block;
+    margin:10px 0px 10px;
+    padding:0px;
+    width:43%;
+    text-align:right;
+    
+    
+}
+.right-tab{
+    display: inline-block;
+    margin:10px 0px 10px;
+    padding:0px;
+    width:40%;
+    text-align:left;
+}
+
+.sf-improvement-container{
+    display:grid;
+    grid-template-columns:50% 50%;
+    grid-template-rows:30px repeat(auto-fill,30px);
+    justify-items:left;
+    padding:0px 20px;
+    margin:15px 0px 30px;
+}
+#professional-label{
+    grid-column:1/2;
+    margin:0px;
+    padding:0px;
+}
+#comments-container{
+    margin:10px 0px 40px;
+    padding:0px 30px;
+    
+}
+.sf-label{
+    grid-column:2/3;
+    display:flex;
+    flex-direction:row;
+    align-items: center;
+    padding:5px;
+    
+}
+textarea{
+    display:inline-block;
+    resize: none;
+    height:90px;
+    width:100%;
+    margin:0px px auto;
+    padding:0px;
+    border-radius:5px;
+}
+#dropdown{
+    width:173px;
+}
+#submit-button{
+    width:150px;
+    height:30px;
+    margin:20px 0px 0px;
+    border-color:#FBE1BE;
+    background-color:transparent;
+    border-radius:15px;
+}
+#submit-button:hover{
+   border-color:#E78B0E;
+   background-color:#FBE1BE;
+   
+}
+input[type="checkbox"]{
+    height:20px;
+    width: 20px;
+    margin:0px 10px 0px;
+    border-style: none;
+    
+}
+.sf-improvement-container input[type="checkbox"]:checked input[type="checkbox"]{
+    outline: 2px solid black;
+}

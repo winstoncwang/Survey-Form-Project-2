@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+<link rel="stylesheet" type="text/css" href="style.css">
+<meta charset="utf-8">
+<title>Survey Form</title>
+</head>
+
+<body>
+  <div id="background-container">    
+    <div id="header-container">
+     <h1 id="title">Portfolio Page Feedback Form</h1>
+     <p id="description">Please complete all the box necessary to help me improve my current portfolio page.</p>
+    
+     <!---------------------- FORM ----------------------->
+     <form id="survey-form">
+            
+            <div class="sf-forename">
+                <div class="left-tab">
+                 <label class="info-label" id="name-label" for="name">*Forename:</label>
+                </div>
+                <div class="right-tab">
+                 <input autofocus id="name" type="text" name="name" placeholder="Enter your forename here" required>
+                </div>
+            </div>
+            <div class="sf-surname">
+                <div class="left-tab">
+                 <label class="info-label" id="surname-label" for="name2">*Surname:</label>
+                </div>
+                <div class="right-tab">
+                 <input id="name2" type="text" name="name2" placeholder="Enter your surname here" required>
+                </div>
+            </div>
+            <div class="sf-gender">
+               <div class="left-tab">
+                <label>*Gender:</label>
+               </div>
+               <div class="right-tab">
+                <select id="dropdown">
+                   <option disabled selected value>Select your gender</option>
+                   <option value="male">Male</option>
+                   <option value="female">Female</option>
+                   <option value="trans">Transgender</option>
+                   <option value="fluid">Genderfluid</option>
+                   <option value="n/a">Prefer not to say</option>  
+                </select>
+               </div>
+            </div>
+            <div class="sf-email">
+                <div class="left-tab">
+                 <label id="email-label" for="email">*Email:</label>
+                </div>
+                <div class="right-tab">
+                 <input id="email" type="email" name="email" placeholder="Enter your email here" required>
+                </div>
+            </div>
+            <div id="expertise">
+              <div class="left-tab">
+                <label id="profession" for="profession-box">Field of expertise:</label>
+              </div>
+              <div class="right-tab">
+                <input type="text" id="profession-box" name="profession" placeholder="Please type here......" height=80vh>
+              </div>
+            </div>
+            <div class="sf-experience-year">
+               <div class="left-tab">
+                 <label id="number-label" for="experience">*Years of professional experience:</label>
+               </div>
+               <div class="right-tab">
+                 <input id="experience" type="number" name="experience-year" placeholder="Years of experience" min="0" max="100">
+               </div>
+            </div>
+            <div id="radio-container">
+              
+         
+            </div>
+            
+            <div class="sf-improvement-container">
+                <label id="professional-label">*Please select the section of the website which needs be to improved upon:</label>
+                
+                <label class="sf-label" id="p1-label" for="p1"><input type="checkbox" id="p1" name="radios" value="index-page"> 
+                Index Page</label>
+                
+                <label class="sf-label" id="p2-label" for="p2"><input type="checkbox" id="p2" name="radios" value="about-page">
+                About Page</label>
+                
+                <label class="sf-label" id="p3-label" for="p3"><input type="checkbox" id="p3" name="radios" value="portfolio-page">
+                Portfolio Page</label>
+               
+                <label class="sf-label" id="p4-label" for="p4"><input type="checkbox" id="p4" name="radio" value="contact-page">
+                Contact Page</label>
+                
+                <label class="sf-label" id="p5-label" for="p5"><input type="checkbox" id="p5" name="radio" value="graphical-design">
+                Graphical Design</label>
+                
+                <label class="sf-label" id="p6-label" for="p6"><input type="checkbox" id="p6" name="radio" value="contents">
+                Contents</label>
+                
+                <label class="sf-label" id="p7-label" for="p7"><input type="checkbox" id="p7" name="radio" value="page-structure">
+                Page Structure</label>
+                </div>
+         
+                <div id="comments-container">
+                <label id="info-label" for="comment-box">Please use the area below for any feedback relating to the website:</label>
+                    <br>
+                    <br>
+                    <textarea id="comment-box" name=comment-box placeholder="    Please type your comments here..."></textarea>
+                <br>
+                <input type="button" id=submit-button name="submit" value="Submit">
+                </div>
+            
+        </form>
+    </div>
+ </div>
+  
+</body>
+
+</html>
